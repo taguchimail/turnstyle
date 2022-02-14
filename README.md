@@ -9,8 +9,8 @@
 </p>
 
 <div align="center">
-  <a href="https://github.com/softprops/turnstyle/actions">
-		<img src="https://github.com/softprops/turnstyle/workflows/Main/badge.svg"/>
+  <a href="https://github.com/rpadaki/turnstyle/actions">
+		<img src="https://github.com/rpadaki/turnstyle/workflows/Main/badge.svg"/>
 	</a>
 </div>
 
@@ -24,7 +24,7 @@ This can be problematic for workflows used as part of a continuous deployment pr
 
 ## 🤸 Usage
 
-The typical setup for turnstyle involves adding job step using `softprops/turnstyle@v1`.
+The typical setup for turnstyle involves adding job step using `rpadaki/turnstyle@v1`.
 
 ```diff
 name: Main
@@ -38,7 +38,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 +     - name: Turnstyle
-+       uses: softprops/turnstyle@v1
++       uses: rpadaki/turnstyle@v1
 +       env:
 +         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy
