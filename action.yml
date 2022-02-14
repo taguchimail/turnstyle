@@ -20,5 +20,5 @@ outputs:
   force_continued:
     description: "True if continue-after-seconds is used and the step using turnstyle continued. False otherwise."
 branding:
-  color: 'green'
+  color: 'purple'
   icon: 'git-commit'
